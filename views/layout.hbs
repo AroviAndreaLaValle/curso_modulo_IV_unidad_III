@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Libreria</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/normalize.css">
+  <link rel="stylesheet" href="stylesheets/milibreria.css">
+</head>
+
+<body>
+  
+  <header style="background-image: url(imagenes/portada.jpg)" id="header">
+  <div class="portada">
+      <div class="titulo_portada">
+        <h1 class="en_inicio">Mi Libreria</h1>
+      </div>
+    </div>  
+
+     <div class="botones">
+        <nav>
+          <ul>
+            <li><a class="{{#if isInicio}}activado {{/if}}" href="/">Inicio</a></li>
+            <li><a class="{{#if isNosotros}}activado {{/if}}" href="/nosotros">Nosotros</a></li>
+            <li><a class="{{#if isLibros}}activado {{/if}}" href="/libros">Libros</a></li>
+            <li><a class="{{#if isHistorias}}activado {{/if}}"  href="/historias">Historias</a></li>
+            <li><a class="{{#if isComentarios}}activado {{/if}}" href="/comentarios">Comentarios</a></li>
+            <li><a class="{{#if isContacto}}activado {{/if}}" href="/contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  {{{body}}}
+  <footer>
+    <p>Diseñado por Aroví - &copy;2021</p>
+  </footer>
+  <script src="javascripts/mover.js"></script>
+</body>
+</html>
